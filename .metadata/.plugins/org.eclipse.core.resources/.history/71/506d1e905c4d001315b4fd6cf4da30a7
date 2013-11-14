@@ -71,8 +71,7 @@ public class NewIdea extends Activity {
 				// that hierarchy.
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
-			case R.id.save_new_idea:
-				SaveIdea(); 
+			case android.R.id.save_new_idea:
 				return true; 
 		}
 		return super.onOptionsItemSelected(item);
@@ -85,11 +84,6 @@ public class NewIdea extends Activity {
 		
 
 		
-	}
-	
-	public void SaveIdea()
-	{
-		// Send some data back to the Home activity 
 	}
 
 

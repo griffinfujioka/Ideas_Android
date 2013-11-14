@@ -72,7 +72,6 @@ public class NewIdea extends Activity {
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
 			case R.id.save_new_idea:
-				SaveIdea(); 
 				return true; 
 		}
 		return super.onOptionsItemSelected(item);
