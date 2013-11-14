@@ -36,6 +36,7 @@ public final class R {
     public static final class id {
         public static final int action_settings=0x7f0a0006;
         public static final int descriptionRow=0x7f0a0004;
+        public static final int discard_idea=0x7f0a0008;
         public static final int editText1=0x7f0a0005;
         public static final int ideaTitleTxtField=0x7f0a0003;
         public static final int new_idea=0x7f0a0007;
@@ -52,40 +53,44 @@ public final class R {
         public static final int new_idea=0x7f090001;
     }
     public static final class string {
-        public static final int action_settings=0x7f060001;
+        /**   Home page strings 
+         */
+        public static final int action_settings=0x7f060005;
         public static final int app_name=0x7f060000;
-        public static final int button_send=0x7f060006;
-        public static final int edit_message=0x7f060005;
+        public static final int button_send=0x7f060004;
+        public static final int discard_new_idea=0x7f06000a;
+        public static final int edit_message=0x7f060003;
         public static final int enter_idea_description=0x7f060008;
         /**  New Idea strings 
          */
         public static final int enter_idea_name=0x7f060007;
-        public static final int hello_world=0x7f060003;
-        public static final int new_idea=0x7f060002;
-        public static final int pref_default_display_name=0x7f06000f;
-        public static final int pref_description_social_recommendations=0x7f06000d;
+        public static final int hello_world=0x7f060001;
+        public static final int new_idea=0x7f060006;
+        public static final int pref_default_display_name=0x7f060011;
+        public static final int pref_description_social_recommendations=0x7f06000f;
         /**  Example settings for Data & Sync 
          */
-        public static final int pref_header_data_sync=0x7f060011;
+        public static final int pref_header_data_sync=0x7f060013;
         /**  Strings related to Settings 
  Example General settings 
          */
-        public static final int pref_header_general=0x7f06000b;
+        public static final int pref_header_general=0x7f06000d;
         /**  Example settings for Notifications 
          */
-        public static final int pref_header_notifications=0x7f060014;
-        public static final int pref_ringtone_silent=0x7f060017;
-        public static final int pref_title_add_friends_to_messages=0x7f060010;
-        public static final int pref_title_display_name=0x7f06000e;
-        public static final int pref_title_new_message_notifications=0x7f060015;
-        public static final int pref_title_ringtone=0x7f060016;
-        public static final int pref_title_social_recommendations=0x7f06000c;
-        public static final int pref_title_sync_frequency=0x7f060012;
-        public static final int pref_title_system_sync_settings=0x7f060013;
-        public static final int pref_title_vibrate=0x7f060018;
+        public static final int pref_header_notifications=0x7f060016;
+        public static final int pref_ringtone_silent=0x7f060019;
+        public static final int pref_title_add_friends_to_messages=0x7f060012;
+        public static final int pref_title_display_name=0x7f060010;
+        public static final int pref_title_new_message_notifications=0x7f060017;
+        public static final int pref_title_ringtone=0x7f060018;
+        public static final int pref_title_social_recommendations=0x7f06000e;
+        public static final int pref_title_sync_frequency=0x7f060014;
+        public static final int pref_title_system_sync_settings=0x7f060015;
+        public static final int pref_title_vibrate=0x7f06001a;
         public static final int save_new_idea=0x7f060009;
-        public static final int title_activity_new_idea=0x7f06000a;
-        public static final int welcome=0x7f060004;
+        public static final int title_activity_new_idea=0x7f06000c;
+        public static final int title_new_idea=0x7f06000b;
+        public static final int welcome=0x7f060002;
     }
     public static final class style {
         /** 

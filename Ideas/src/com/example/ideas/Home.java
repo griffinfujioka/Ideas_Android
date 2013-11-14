@@ -42,8 +42,8 @@ public class Home extends Activity {
 	
 	public void NewIdea()
 	{
-		
-		setContentView(R.layout.activity_new_idea);
+		Intent intent = new Intent(this, NewIdea.class);
+		startActivity(intent);
 		
 	}
 

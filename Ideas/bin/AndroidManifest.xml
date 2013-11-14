@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="18" />
 
     <application
@@ -24,7 +24,7 @@
         </activity>
         <activity
             android:name="com.example.ideas.NewIdea"
-            android:label="@string/title_activity_new_idea"
+            android:label="@string/new_idea"
             android:parentActivityName="com.example.ideas.Home" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

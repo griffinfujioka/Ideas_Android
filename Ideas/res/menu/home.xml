@@ -10,8 +10,7 @@
         android:id="@+id/new_idea" 
         android:title="@string/new_idea" 
         android:orderInCategory="1" 
-        android:showAsAction="always" 
-        android:icon="@drawable/new_idea_dark"/>
+        android:showAsAction="always"/>
     
 
 </menu>

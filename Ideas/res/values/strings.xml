@@ -2,17 +2,21 @@
 <resources>
 
     <string name="app_name">Ideas</string>
-    <string name="action_settings">Settings</string>
-    <string name="new_idea">New Idea</string>
     <string name="hello_world">Hello world!</string>
     <string name="welcome">Welcome to Ideas for Android!</string>
     <string name="edit_message">Enter some text</string>
     <string name="button_send">Send</string>
     
+    <!--  Home page strings -->
+    <string name="action_settings">Settings</string>
+    <string name="new_idea">New Idea</string>
+    
     <!-- New Idea strings -->
     <string name="enter_idea_name">Enter idea name</string>
     <string name="enter_idea_description">Enter a description of the idea</string>
     <string name="save_new_idea">Save idea</string>
+    <string name="discard_new_idea">Discard</string>
+    <string name="title_new_idea">activity_new_idea</string>
     
 
 </resources>
