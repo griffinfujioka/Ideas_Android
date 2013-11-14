@@ -6,7 +6,6 @@
     <string name="welcome">Welcome to Ideas for Android!</string>
     <string name="edit_message">Enter some text</string>
     <string name="button_send">Send</string>
-    <string name="button_add">Add</string>
     
     <!--  Home page strings -->
     <string name="action_settings">Settings</string>
@@ -18,7 +17,6 @@
     <string name="save_new_idea">Save idea</string>
     <string name="discard_new_idea">Discard</string>
     <string name="title_new_idea">activity_new_idea</string>
-    <string name="enter_system_requirement">Enter a system requirement</string>
     
 
 </resources>

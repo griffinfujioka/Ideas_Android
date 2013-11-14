@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical" >
 
     <TableRow
         android:id="@+id/titleRow"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1" >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
 
         <EditText
             android:id="@+id/ideaTitleTxtField"
@@ -25,12 +24,11 @@
 
     <TableRow
         android:id="@+id/descriptionRow"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1" >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
 
         <EditText
-            android:id="@+id/ideaDescriptionTxtField"
+            android:id="@+id/editText1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -42,12 +40,11 @@
 
     <TableRow
         android:id="@+id/tableRow1"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1" >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
 
         <EditText
-            android:id="@+id/sysReqTxtField"
+            android:id="@+id/editText2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -61,12 +58,12 @@
             android:layout_height="wrap_content"
             android:text="@string/button_add" />
 
-    </TableRow>
-    
-    <ListView
+        <ListView
             android:id="@+id/listView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
         </ListView>
+
+    </TableRow>
 
 </LinearLayout>

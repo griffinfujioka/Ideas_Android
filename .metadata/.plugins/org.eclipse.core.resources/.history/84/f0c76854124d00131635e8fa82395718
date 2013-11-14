@@ -6,7 +6,6 @@
     <string name="welcome">Welcome to Ideas for Android!</string>
     <string name="edit_message">Enter some text</string>
     <string name="button_send">Send</string>
-    <string name="button_add">Add</string>
     
     <!--  Home page strings -->
     <string name="action_settings">Settings</string>
