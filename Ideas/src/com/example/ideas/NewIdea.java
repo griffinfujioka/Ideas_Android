@@ -87,9 +87,16 @@ public class NewIdea extends Activity {
 		
 	}
 	
+	
 	public void SaveIdea()
 	{
-		// Send some data back to the Home activity 
+		/************************************************/
+		/* Gather data from all of the input fields 	*/ 
+		/************************************************/ 
+		
+		/************************************************/
+		/* Send some data back to the Home activity 	*/ 
+		/************************************************/ 
 	}
 
 

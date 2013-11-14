@@ -1,0 +1,7 @@
+package com.example.ideas;
+
+public class Idea {
+	private int _id; 
+	private string _title; 
+	private string _description; 
+}

@@ -1,0 +1,19 @@
+package com.example.ideas;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.SQLException;
+import android.database.sqlite.SQLiteDatabase;
+
+public class IdeaOperations {
+	private DatabaseWrapper dbHelper;
+	private String[] IDEAS_TABLE_COLUMNS = {DatabaseWrapper.IDEA_ID, 
+			DatabaseWrapper.IDEA_TITLE, 
+			DatabaseWrapper.IDEA_DESCRIPTION }; 
+	
+	
+}

@@ -1,0 +1,40 @@
+package com.example.ideas;
+
+import android.R.string;
+
+public class Idea {
+	private int _id; 
+	private string _title; 
+	private string _description; 
+	
+	public int getId()
+	{
+		return _id; 
+	}
+	
+	public void setId(int id)
+	{
+		this._id = id; 
+	}
+	
+	public string getTitle()
+	{
+		return _title; 
+	}
+	
+	public void setTitle(string title)
+	{
+		this._title = title; 
+	}
+	
+	public string getDescription()
+	{
+		return _description; 
+	}
+	
+	public void setDescription(string description)
+	{
+		this._description = description; 
+	}
+	
+}

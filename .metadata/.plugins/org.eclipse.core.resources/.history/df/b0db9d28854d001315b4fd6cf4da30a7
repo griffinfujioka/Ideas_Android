@@ -1,0 +1,86 @@
+/********************************************************/ 
+/* The IdeaOperations class describes and implements 	*/ 
+/* the specific database operations (i.e., add, delete)	*/ 
+/* on an Idea object 									*/ 
+/********************************************************/ 
+
+package com.example.ideas;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.SQLException;
+import android.database.sqlite.SQLiteDatabase;
+
+public class IdeaOperations {
+	private DatabaseWrapper dbHelper;
+	private String[] IDEAS_TABLE_COLUMNS = {DatabaseWrapper.IDEA_ID, 
+			DatabaseWrapper.IDEA_TITLE, 
+			DatabaseWrapper.IDEA_DESCRIPTION }; 
+	
+	private SQLiteDatabase database; 
+	
+	public IdeaOperations(Context context)
+	{
+		dbHelper = new DatabaseWrapper(context);
+	}
+	
+	public void open() throws SQLException
+	{
+		database = dbHelper.getWritableDatabase(); 
+	}
+	
+	public void close()
+	{
+		dbHelper.close(); 
+	}
+	
+	public Idea addIdea(String title)
+	{
+		ContentValues values = new ContentValues();
+		values.put(DatabaseWrapper.IDEA_TITLE, title);
+		long ideaId = database.insert(DatabaseWrapper.TABLE_NAME, null, values); 
+		
+		// Now that we've created the idea, return it 
+		Cursor cursor = database.query(DatabaseWrapper.TABLE_NAME,
+				IDEAS_TABLE_COLUMNS, DatabaseWrapper.IDEA_ID + " = "
+				+ ideaId, null, null, null, null);
+		
+		cursor.moveToFirst(); 
+		
+		Idea newIdea = parseIdea(cursor); 
+		
+		cursor.close(); 
+		
+		return newIdea; 
+
+	}
+	
+	public void deleteIdea(Idea idea)
+	{
+		long ideaId = idea.getId(); 
+		System.out.println("Idea deleted with id: " + ideaId);
+		database.delete(DatabaseWrapper.TABLE_NAME, DatabaseWrapper.IDEA_ID
+				+ " = " + ideaId, null);
+
+
+	}
+	
+	public List getAllIdeas()
+	{
+		
+	}
+	
+	private Idea parseIdea(Cursor cursor)
+	{
+		Idea idea = new Idea(); 
+		idea.setId((cursor.getInt(0)));
+		idea.setTitle(cursor.getString(1)); 
+		return idea; 
+	}
+	
+	
+}
