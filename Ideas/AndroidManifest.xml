@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.ideas.NewIdea"
+            android:label="@string/title_activity_new_idea"
+            android:parentActivityName="com.example.ideas.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ideas.Home" />
+        </activity>
     </application>
 
 </manifest>
